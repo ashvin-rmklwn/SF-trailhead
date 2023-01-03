@@ -1,0 +1,22 @@
+<!--
+  @description       : 
+  @author            : ARM
+  @group             : 
+  @last modified on  : 03-01-2023
+  @last modified by  : ARM
+  @Version           :  
+  Modifications Log
+  Ver   Date         Author   Modification
+  1.0   03-01-2023   ARM   Initial Version
+-->
+<template>
+  <lightning-card title="Unit Status" icon-name="standard:bot">
+    <lightning-input
+      label="Unit Number"
+      value={unitNumber}
+      onchange={handleChange}
+    >
+    </lightning-input>
+    <div class="slds-m-around_medium">Unit {unitNumber} alive!</div>
+  </lightning-card>
+</template>

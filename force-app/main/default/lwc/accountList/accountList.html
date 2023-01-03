@@ -1,0 +1,26 @@
+<!--
+  @description       : 
+  @author            : ARM
+  @group             : 
+  @last modified on  : 03-01-2023
+  @last modified by  : ARM
+  @Version           :  
+  Modifications Log
+  Ver   Date         Author   Modification
+  1.0   03-01-2023   ARM   Initial Version
+-->
+<template>
+  <lightning-card>
+    <template if:true={accounts.data}>
+      <lightning-datatable
+        key-field="Id"
+        data={accounts.data}
+        columns={columns}
+      >
+      </lightning-datatable>
+    </template>
+    <template if:true={errors}>
+      <p>{errors}</p>
+    </template>
+  </lightning-card>
+</template>
